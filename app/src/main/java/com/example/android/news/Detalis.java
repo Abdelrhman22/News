@@ -26,7 +26,7 @@ public class Detalis extends AppCompatActivity {
 
         desc.setText(intent.getStringExtra("desc"));
         tilte.setText(intent.getStringExtra("title"));
-        Picasso.with(getApplicationContext()).load(intent.getStringExtra("image")).into(imageView);
+        Picasso.with(getApplicationContext()).load(intent.getStringExtra("image")).placeholder(R.drawable.load).error(R.drawable.error).into(imageView);
 
 
     }

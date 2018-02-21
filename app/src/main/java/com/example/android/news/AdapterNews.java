@@ -50,7 +50,9 @@ public class AdapterNews extends RecyclerView.Adapter<AdapterNews.ViewHolder> im
 
         holder.textTitle.setText(encap.getTitle());
         holder.textDesc.setText(encap.getDesc());
-        Picasso.with(context).load(encap.getImg()).into(holder.imageNews);
+       // Picasso.with(context).load(encap.getImg()).into(holder.imageNews);
+ Picasso.with(context).load(encap.getImg()).placeholder(R.drawable.load).error(R.drawable.error).into(holder.imageNews);
+
     }
 
     @Override

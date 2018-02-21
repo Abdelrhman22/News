@@ -9,27 +9,33 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
     tools:context="com.example.android.news.Detalis">
 
-    <ImageView
-        android:src="@mipmap/ic_launcher"
-        android:id="@+id/image_news"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <TextView
-        android:textSize="25sp"
-        android:textColor="#000000"
-        android:text="Text Title "
+        android:gravity="center"
         android:id="@+id/text_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Text Title "
+        android:textColor="#3F51B5"
+        android:textStyle="bold|italic"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image_news"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
-        android:textSize="15sp"
-        android:text="Text  Describtion"
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:textColor="#000000"
         android:id="@+id/text_desc"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Text  Describtion"
+        android:textSize="15sp" />
 
 </LinearLayout>
